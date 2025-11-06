@@ -1,0 +1,25 @@
+# Example Terraform variables for production deployment
+# Copy this file to terraform.tfvars and customize for your environment
+
+# AWS Configuration
+aws_region = "us-east-1"
+environment = "production"
+project_name = "agentic-ai-finproc"
+
+# API Gateway Configuration
+api_throttle_rate = 1000
+api_throttle_burst = 2000
+
+# Lambda Configuration
+lambda_memory_size = 1024
+lambda_timeout = 900
+
+# Feature Flags
+enable_xray = true
+enable_waf = true
+
+# Data Retention
+document_retention_days = 2555  # 7 years for financial compliance
+
+# Notifications
+notification_email = "admin@yourcompany.com"
